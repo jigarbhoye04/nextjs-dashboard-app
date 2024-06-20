@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* custom styles for specific layers of tailwind directives */
+@layer base {
+  h1{
+    color: #424923;
+  }
+}
+
+
+/* Purpose: This directive is used to include styles for specific screen sizes (responsive design). */
+@screen md {
+  .btn{
+    padding: 1rem 2rem;
+  }
+}
+
+
+input[type='number'] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+input[type='number']::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+

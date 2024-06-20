@@ -1,0 +1,9 @@
+.center-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    margin-left: 8px;
+    height: 100vh; /* This makes the container take the full height of the viewport */
+  }
+  
