@@ -34,6 +34,16 @@ export default function Page() {
               <span>Log in</span>
             </button>
           </Link>
+          <Link
+            href={'/dashboard'}
+            className="bg-gray-50 border border-gray-300 flex items-center gap-5 self-start rounded-lg px-6 py-3 text-sm font-medium text-gray-800 transition-colors md:text-base"
+          >
+            {/* <span>Dashboard</span> <ArrowRightIcon className="w-5 md:w-6" /> */}
+            <button>
+              <span>Dashboard</span>
+            </button>
+          </Link>
+          
         </div>
         <div className="flex items-center justify-center p-6 md:w-3/5 md:px-28 md:py-12">
           {/* Add Hero Images Here */}
