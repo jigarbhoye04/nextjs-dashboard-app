@@ -25,25 +25,26 @@ export default function Page() {
             </a>
             , brought to you by Vercel.
           </p>
-          <Link
-            href="/login"
-            className="bg-blue-500 hover:bg-green-800 flex items-center gap-5 self-start rounded-lg px-6 py-3 text-sm font-medium text-white transition-colors md:text-base"
-          >
-            {/* <span>Log in</span> <ArrowRightIcon className="w-5 md:w-6" /> */}
-            <button>
-              <span>Log in</span>
-            </button>
-          </Link>
-          <Link
-            href={'/dashboard'}
-            className="bg-gray-50 border border-gray-300 flex items-center gap-5 self-start rounded-lg px-6 py-3 text-sm font-medium text-gray-800 transition-colors md:text-base"
-          >
-            {/* <span>Dashboard</span> <ArrowRightIcon className="w-5 md:w-6" /> */}
-            <button>
-              <span>Dashboard</span>
-            </button>
-          </Link>
-          
+          <div className="mt-4 flex grow flex-row gap-4 md:flex-row">
+            <Link
+              href="/login"
+              className="flex items-center gap-5 self-start rounded-lg bg-blue-500 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-green-600 md:text-base"
+            >
+              {/* <span>Log in</span> <ArrowRightIcon className="w-5 md:w-6" /> */}
+              <button>
+                <span>Log in</span>
+              </button>
+            </Link>
+            <Link
+              href={'/dashboard'}
+              className="flex items-center gap-5 self-start rounded-lg border border-gray-500 bg-gray-50 px-6 py-3 text-sm font-medium text-gray-800 transition-colors md:text-base hover:bg-blue-200"
+            >
+              {/* <span>Dashboard</span> <ArrowRightIcon className="w-5 md:w-6" /> */}
+              <button>
+                <span>Dashboard</span>
+              </button>
+            </Link>
+          </div>
         </div>
         <div className="flex items-center justify-center p-6 md:w-3/5 md:px-28 md:py-12">
           {/* Add Hero Images Here */}
@@ -51,15 +52,15 @@ export default function Page() {
             src="/hero-desktop.png"
             width={1000}
             height={760}
-            className='hidden md:block' //this line hides the images for mobile version and only renders in desk ver.
-            alt='Screenshot of the dashboard project showing desktop version'
+            className="hidden md:block" //this line hides the images for mobile version and only renders in desk ver.
+            alt="Screenshot of the dashboard project showing desktop version"
           />
           <Image
             src="/hero-mobile.png"
             width={375}
             height={667}
-            className='block md:hidden' //this line hides the images for desktop version and only renders in mobile ver.
-            alt='Screenshot of the dashboard project showing mobile version'
+            className="block md:hidden" //this line hides the images for desktop version and only renders in mobile ver.
+            alt="Screenshot of the dashboard project showing mobile version"
           />
         </div>
       </div>
