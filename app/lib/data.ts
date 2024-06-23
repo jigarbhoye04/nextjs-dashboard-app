@@ -34,6 +34,7 @@ export async function fetchRevenue() {
   }
 }
 
+//fetch last 5 invoices sorted by date LIMIT to 5
 export async function fetchLatestInvoices() {
   try {
     const data = await sql<LatestInvoiceRaw>`
