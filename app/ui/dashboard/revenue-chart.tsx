@@ -2,6 +2,7 @@ import { generateYAxis } from '@/app/lib/utils';
 import { CalendarIcon } from '@heroicons/react/24/outline';
 import { lusitana } from '@/app/ui/fonts';
 import { Revenue } from '@/app/lib/definitions';
+import { fetchRevenue } from '@/app/lib/data';
 
 // This component is representational only.
 // For data visualization UI, check out:
@@ -14,6 +15,8 @@ export default async function RevenueChart({
 }: {
   revenue: Revenue[];
 }) {
+  
+  revenue = await fetchRevenue();
   const chartHeight = 350;
   // NOTE: comment in this code when you get to this point in the course
 
@@ -30,7 +33,7 @@ export default async function RevenueChart({
       </h2>
       {/* NOTE: comment in this code when you get to this point in the course */}
 
-      <div className="rounded-xl bg-gray-50 p-4">
+      <div className="rounded-xl bg-sky-50 p-4">
         <div className="sm:grid-cols-13 mt-0 grid grid-cols-12 items-end gap-2 rounded-md bg-white p-4 md:gap-4">
           <div
             className="mb-6 hidden flex-col justify-between text-sm text-gray-400 sm:flex"
