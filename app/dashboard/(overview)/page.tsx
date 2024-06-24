@@ -1,3 +1,4 @@
+'use client';
 // import { Card } from '@/app/ui/dashboard/cards';
 import CardWrapper from '@/app/ui/dashboard/cards';
 import { lusitana } from '../../ui/fonts';

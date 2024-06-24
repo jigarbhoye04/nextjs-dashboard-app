@@ -7,3 +7,11 @@
     height: 100vh; /* This makes the container take the full height of the viewport */
   }
   
+  body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+  }
+  
+  body {
+    transition: background-color 0.5s, color 0.5s;
+  }
