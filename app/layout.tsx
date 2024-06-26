@@ -1,7 +1,11 @@
 import '@/app/ui/global.css';
 import '@/app/ui/random.css';
 // import localFont from 'next/font/local'
-import { inter, lusitana, roboto_mono } from '@/app/ui/fonts';
+import { 
+  inter, 
+  lusitana, 
+  // roboto_mono,
+ } from '@/app/ui/fonts';
 
 
 //local fonts
