@@ -1,4 +1,13 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+ 
+// const nextConfig = {
+//     experimental: {
+//       ppr: 'incremental',
+//     },
+//   };
 
-module.exports = nextConfig;
+// This is not working for this PC because of dependencies issue with react-dom
+
+const nextConfig = {};
+   
+  module.exports = nextConfig;
