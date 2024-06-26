@@ -1,13 +1,14 @@
 import AcmeLogo from '@/app/ui/jigx-logo';
 import { ArrowRightIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
-// import styles from '@/app/ui/home.module.css';
+
 import { 
   lusitana, 
   // BB, 
   // space_Mono,
   // roboto_mono,
  } from '@/app/ui/fonts';
+ 
 import Image from 'next/image';
 
 export default function Page() {
@@ -24,11 +25,9 @@ export default function Page() {
           <p
             className={`${lusitana.className} text-sm text-gray-800 md:text-2xl md:leading-normal`}
           >
-            <strong>Welcome to Dashboard app.</strong> This is the example for the{' '}
+            <strong>Welcome to Dashboard app.</strong> This is the example for the
             <a href="https://nextjs.org/learn/" className="text-blue-500">
-            lol i don't know but i'll know.
-            </a>
-            , by JIGX.
+            </a> Made by JIGX.
           </p>
           <div className="mt-4 flex grow flex-row gap-4 md:flex-row">
             <Link
