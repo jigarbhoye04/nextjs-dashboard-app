@@ -15,3 +15,4 @@ This project is a dashboard application built with Next.js. It provides a user-f
    ```bash
    git clone https://github.com/jigarbhoye04/nextjs-dashboard-app.git
    cd dashboard-app
+   ```

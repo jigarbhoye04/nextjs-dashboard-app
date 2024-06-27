@@ -12,7 +12,7 @@
     "@heroicons/react": "^2.0.18",
     "@tailwindcss/forms": "^0.5.7",
     "@types/node": "20.5.7",
-    "@vercel/postgres": "^0.5.1",
+    "@vercel/postgres": "^0.9.0",
     "autoprefixer": "10.4.15",
     "bcrypt": "^5.1.1",
     "clsx": "^2.1.1",
@@ -41,5 +41,12 @@
   },
   "engines": {
     "node": ">=18.17.0"
-  }
+  },
+  "name": "nextjs-dashboard",
+  "version": "1.0.0",
+  "description": "A dashboard app built with Next.js",
+  "main": "index.js",
+  "repository": "https://github.com/jigarbhoye04/nextjs-dashboard-app.git",
+  "author": "jigarbhoye04",
+  "license": "MIT"
 }
