@@ -70,6 +70,12 @@ const customers = [
     email: 'balazs@orban.com',
     image_url: '/customers/balazs-orban.png',
   },
+  {
+    id:'13D07535-C59E-4157-A011-F8D2EFBATMAN',
+    name: 'Jigar Bhoye',
+    email: 'jigx04@bat.com',
+    image_url: '/customers/batman.jpg',
+  },
 ];
 
 const invoices = [

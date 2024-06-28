@@ -35,6 +35,26 @@ export async function fetchRevenue() {
 }
 
 //fetch last 5 invoices sorted by date LIMIT to 5
+// export async function fetchLatestInvoices() {
+//   try {
+//     const data = await sql<LatestInvoiceRaw>`
+//       SELECT invoices.amount, customers.name, customers.image_url, customers.email, invoices.id
+//       FROM invoices
+//       JOIN customers ON invoices.customer_id = customers.id
+//       ORDER BY invoices.date DESC
+//       LIMIT 5`;
+
+//     const latestInvoices = data.rows.map((invoice: { amount: number; }) => ({
+//       ...invoice, 
+//       amount: formatCurrency(invoice.amount),
+//     }));
+
+//     return latestInvoices;
+//   } catch (error) {
+//     console.error('Database Error:', error);
+//     throw new Error('Failed to fetch the latest invoices.');
+//   }
+// }
 export async function fetchLatestInvoices() {
   try {
     const data = await sql<LatestInvoiceRaw>`
@@ -44,9 +64,12 @@ export async function fetchLatestInvoices() {
       ORDER BY invoices.date DESC
       LIMIT 5`;
 
-    const latestInvoices = data.rows.map((invoice: { amount: number; }) => ({
-      ...invoice, 
-      amount: formatCurrency(invoice.amount),
+    const latestInvoices = data.rows.map((invoice) => ({
+      id: invoice.id,
+      name: invoice.name,
+      email: invoice.email,
+      image_url: invoice.image_url,
+      amount: formatCurrency(invoice.amount), // Assuming formatCurrency is a function that formats the amount
     }));
 
     return latestInvoices;
