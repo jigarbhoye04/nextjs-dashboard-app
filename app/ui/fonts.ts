@@ -17,8 +17,8 @@ export const lusitana = Lusitana({
 //   display: 'swap',
 // });
 
-// export const space_Mono = Space_Mono({
-//     subsets: ['latin'],
-//     display: 'swap',
-//     weight: '400'
-// })
+export const space_Mono = Space_Mono({
+    subsets: ['latin'],
+    display: 'swap',
+    weight: '400'
+})
