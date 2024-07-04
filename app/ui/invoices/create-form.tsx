@@ -2,7 +2,8 @@ import { CustomerField } from '@/app/lib/definitions';
 import Link from 'next/link';
 ('use Client');
 import { useActionState } from 'react';
-//yarn add next@canary
+//yarn add next@rc react@rc react-dom@rc --legacy-peer-deps
+//yarn add next@rc react@rc react-dom@rc --ignore-engines
 
 import {
   CheckIcon,
@@ -19,7 +20,8 @@ export default function Form({ customers }: { customers: CustomerField[] }) {
   const [state, formAction] = useActionState(createInvoice, initialState);
 
   return (
-    <form action={formAction}>
+    // <form action={formAction}>
+    <form>
       <div className="rounded-md bg-gray-50 p-4 md:p-6">
         {/* Customer Name */}
         <div className="mb-4">
